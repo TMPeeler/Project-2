@@ -15,6 +15,10 @@ Brew.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        breweryName:{
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         description:{
             type: DataTypes.STRING,
             allowNull: false,
