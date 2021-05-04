@@ -23,6 +23,22 @@ Review.init(
                 max: 5,
             },
         },
+        user_id:{
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            references:{
+                model:'user',
+                key:'id'
+            },
+        },
+        brew_id:{
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            references:{
+                model:'brew',
+                key:'id'
+            },
+        },
     },
     {
         sequelize,
