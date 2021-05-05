@@ -27,7 +27,7 @@ Brew.init(
             type: DataTypes.INTEGER,
             allowNull: false,
         },
-        typeOfBrew:{
+        style:{
             type: DataTypes.STRING,
             allowNull: false,
         },
