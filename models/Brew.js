@@ -46,7 +46,7 @@ Brew.init(
         freezeTableName: true,
         underscored: true,
         modelName: 'brew',
-      }
+    }
 );
 
 module.exports = Brew;

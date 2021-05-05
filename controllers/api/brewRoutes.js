@@ -2,6 +2,7 @@ const Brew = require('../../models/Brew');
 const User = require('../../models/User');
 const Review = require('../../models/Review');
 const withAuth = require('../../utils/auth');
+const router = require('express').Router();
 
 router.post('/newbrew', withAuth, async (req,res) => {
     try {
@@ -11,3 +12,5 @@ router.post('/newbrew', withAuth, async (req,res) => {
         res.status(400).json(err);
     }
 });
+
+module.exports = router;
