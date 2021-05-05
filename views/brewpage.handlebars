@@ -21,12 +21,15 @@
                     <div class="container justify-content-end">
 
                         <!-- if not logged in show  -->
+                        {{#if !logged_in}}
                         <a class="nav-link fs-2" href="/login">Login</a>
+                        {{/if}}
                         <!-- if logged in show this one -->
+                        {{#if logged_in}}
                         <a class="nav-link fs-2" href="/logout">Logout</a>
+                        {{/if}}
                     </div>
                 </nav>
-
 
                 <div class="row">
                     <div class="col-md-12">
@@ -52,8 +55,9 @@
                             </div>
                         </div> --}}
                         {{!-- -------REVIEW PARTIAL------- --}}
-
-
+                        {{#each}}
+                        {{> Reviewcard}}
+                        {{/each}}
 
                     </div>
                 </div>
