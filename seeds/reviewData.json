@@ -3,4 +3,41 @@
     "score": 5,
     "user_id": 1,
     "brew_id":1
-}]
+},
+{
+    "text": "The beer, the myth... the legend. It was of course a divine experience to taste it the first time. However, it’s a beer that you’ll gladly revisit at any chance given. A refreshing and amazing good old West Coast IPA, full of hoppy excitement!",
+    "score": "4.9",
+    "user_id": "1",
+    "brew_id": "1"
+},
+{
+    "text": "Stone Enjoy By 4-20-21, on tap in Ernie´s Tin Bar, Petaluma, in October. An excellent double IPA, brimming with luscious and fresh hop aromas and flavours, intense but not too extreme.",
+    "score": "4.9",
+    "user_id": "2",
+    "brew_id": "2"
+},
+{
+    "text": "",
+    "score": "",
+    "user_id": "",
+    "brew_id": ""
+},
+{
+    "text": "",
+    "score": "",
+    "user_id": "",
+    "brew_id": ""
+},
+{
+    "text": "",
+    "score": "",
+    "user_id": "",
+    "brew_id": ""
+},
+{
+    "text": "",
+    "score": "",
+    "user_id": "",
+    "brew_id": ""
+}
+]
