@@ -28,45 +28,45 @@
     "style": "Mexican Lager"
 },
 {
-    "name": "",
-    "breweryName": "",
-    "description": "",
+    "name": "Bud Light",
+    "breweryName": "Anheiser-Bush",
+    "description": "We carefully brew our beer to be perfect for anywhere there's fun-because when there's fun, there's a Bud Light there. Every bottle, can and draft of Bud Light uses four simple, high quality ingredients to create a clean, crisp taste.",
+    "alcContent": "4.2",
+    "style": "American Light Lager"
+},
+{
+    "name": "Pabst Blue Ribbon",
+    "breweryName": "Pabst Blue Ribbon",
+    "description": "A refreshing light lager always good for all the time",
+    "alcContent": "4.8",
+    "style": "American Light Lager"
+},
+{
+    "name": "Guiness Draught",
+    "breweryName": "Guinness",
+    "description": "Rich and creamy. Distinctively black. Velvety in its finish. This iconic beer is defined by harmony. Sip after sip, sweet counters bitter as the malt arrives on cue to compliment a base of roasted barley. Just as the unmistakable white head sits flush atop the dark beer, so do the flavors counter and combine perfectly. This is our greatest innovation. Truly unique. Perfectly balanced. Made of More™.",
+    "alcContent": "4.2",
+    "style": "Dry Stout"
+},
+{
+    "name": "Campfire Stout",
+    "breweryName": "High Water Brewing",
+    "description": "Stout brewed with graham crackers, molasses with natural flavor added. Campfire Stout evokes fond memories of wilderness and camping adventures. Notes of chocolate and graham cracker topped with a hint of marshmallow will leave you wanting s’more. Like any campfire experience, this beer is best shared with a warm circle of family and friends.",
     "alcContent": "",
     "style": ""
 },
 {
-    "name": "",
-    "breweryName": "",
-    "description": "",
-    "alcContent": "",
-    "style": ""
+    "name": "Hoptomic",
+    "breweryName": "Morgan Territory",
+    "description": "A Hop Driven Beer Hoptomic is a hop forward West-Coast Double IPA that’s driven by profiles of Citrus, Pine and Resin. We keep the malt bill simple so it won't interfere with all the hops.",
+    "alcContent": "8.5",
+    "style": "Dpuble IPA"
 },
 {
-    "name": "",
-    "breweryName": "",
-    "description": "",
-    "alcContent": "",
-    "style": ""
-},
-{
-    "name": "",
-    "breweryName": "",
-    "description": "",
-    "alcContent": "",
-    "style": ""
-},
-{
-    "name": "",
-    "breweryName": "",
-    "description": "",
-    "alcContent": "",
-    "style": ""
-},
-{
-    "name": "",
-    "breweryName": "",
-    "description": "",
-    "alcContent": "",
-    "style": ""
-},
+    "name": "Guava Happens",
+    "breweryName": "The Rare Barrel",
+    "description": "golden sour beer aged in oak barrels with pink guava",
+    "alcContent": "7.1",
+    "style": "Sour Ale"
+}
 ]
