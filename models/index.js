@@ -2,16 +2,12 @@ const Brew = require('./Brew');
 const Review = require('./Review');
 const User = require('./User');
 
-Review.belongsTo(Brew,{foreignKey: //add foreign key
-})
+Review.belongsTo(Brew,{foreignKey: brew_id});
 
-Review.belongsTo(User,{foreignKey: //add foreign key
-})
+Review.belongsTo(User,{foreignKey: user_id});
 
-User.hasMany(Review,{foreignKey: //add foreign key
-})
+User.hasMany(Review,{foreignKey: user_id});
 
-Brew.hasMany(Review,{foreignKey: //add foreign key
-})
+Brew.hasMany(Review,{foreignKey: brew_id});
 
 module.exports = {Brew,User,Review};
