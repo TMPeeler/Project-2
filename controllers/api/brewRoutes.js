@@ -13,4 +13,17 @@ router.post('/newbrew', withAuth, async (req,res) => {
     }
 });
 
+router.get('/:id', async (req,res) => {
+    try {
+        const brewData = await Brew.findByPk(req.params.id)
+        if(!brewData){
+            res.status(404).json({message:"No Beer Found Matching Your Selection"});
+        }
+        console.log(brewData);
+        res.status(200).json(brewData);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
 module.exports = router;
