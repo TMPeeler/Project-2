@@ -1,0 +1,72 @@
+[
+{
+    "name": "Pliny The Elder",
+    "breweryName": "Russian River",
+    "description": "Pliny the Elder is brewed with Amarillo, Centennial, CTZ, and Simcoe hops. It is well-balanced with malt, hops, and alcohol, slightly bitter with a fresh hop aroma of floral, citrus, and pine. Best enjoyed FRESH! That is why we make it in such a limited supply. The actual bottling date is printed on each bottle!",
+    "alcContent": "8.0%",
+    "style": "Double IPA"
+},
+{
+    "name": "Enjoy By",
+    "breweryName": "Stone",
+    "description": "Consistently delivered faster than any bottled IPA on the planet, Stone Enjoy By IPA facilitated a paradigm shift in respect for and enjoyment of hoppy beers by ensuring craft beer fans the ultimate level of freshness. We brew this intense double IPA with more than 10 different hops, employing hop-bursting and dry-hopping techniques to amp up the peach and tropical fruit notes and overall hop factor. Brewed specifically NOT to last, this devastatingly fresh, golden beauty should be enjoyed within 37 days.",
+    "alcContent": "9.4",
+    "style": "Double IP"
+},
+{
+    "name": "Budweiser",
+    "breweryName": "Anheiser-Bush",
+    "description": "Budweiser is a medium-bodied, flavorful, crisp American style lager. Brewed with the best barley malt and a blend of premium hop varieties.",
+    "alcContent": "5.0",
+    "style": "American Lager"
+},
+{
+    "name": "Modelo",
+    "breweryName": "Grupo Modelo",
+    "description": "Well-balanced taste and light hop character with a crisp, clean finish. Modelo Especial is characterized by an orange blossom honey aroma with a hint of herb. Modelo Especial contains Water, Barley Malt, Non-malted Cereals and Hops.",
+    "alcContent": "4.4",
+    "style": "Mexican Lager"
+},
+{
+    "name": "",
+    "breweryName": "",
+    "description": "",
+    "alcContent": "",
+    "style": ""
+},
+{
+    "name": "",
+    "breweryName": "",
+    "description": "",
+    "alcContent": "",
+    "style": ""
+},
+{
+    "name": "",
+    "breweryName": "",
+    "description": "",
+    "alcContent": "",
+    "style": ""
+},
+{
+    "name": "",
+    "breweryName": "",
+    "description": "",
+    "alcContent": "",
+    "style": ""
+},
+{
+    "name": "",
+    "breweryName": "",
+    "description": "",
+    "alcContent": "",
+    "style": ""
+},
+{
+    "name": "",
+    "breweryName": "",
+    "description": "",
+    "alcContent": "",
+    "style": ""
+},
+]
