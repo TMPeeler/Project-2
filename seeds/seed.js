@@ -17,7 +17,7 @@ const seedDatabase = async () => {
         returning: true,
     });
     await Review.bulkCreate(reviewData, {
-        returning : true,
+        returning: true,
     });
     console.log("------");
     process.exit(0);
