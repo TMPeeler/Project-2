@@ -7,8 +7,9 @@ router.get('/', async (req,res)=>{
         const brewData = await Brew.findAll({});
         const brews = brewData.map((brew)=> brew.get({plain: true}));
         console.log(brews);
+        //res.status(200).json(brews);
         res.render('homepage',{
-            brew = brews
+            brew: brews
         });
     } catch (err) {
         res.status(500).json(err);
