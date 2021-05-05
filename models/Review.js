@@ -12,7 +12,7 @@ Review.init(
             autoIncrement: true,
           },
         text:{
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: false,
         },
         score:{
@@ -28,7 +28,7 @@ Review.init(
             allowNull: false,
             references:{
                 model:'user',
-                key:'id'
+                key:'id',
             },
         },
         brew_id:{
@@ -45,7 +45,7 @@ Review.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'product',
+        modelName: 'review',
       }
 );
 

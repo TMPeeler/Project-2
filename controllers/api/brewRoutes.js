@@ -1,3 +1,4 @@
+const router = require('express').Router();
 const Brew = require('../../models/Brew');
 const User = require('../../models/User');
 const Review = require('../../models/Review');
@@ -11,3 +12,9 @@ router.post('/newbrew', withAuth, async (req,res) => {
         res.status(400).json(err);
     }
 });
+
+
+
+
+
+module.exports = router

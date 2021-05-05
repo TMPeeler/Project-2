@@ -1,4 +1,6 @@
-{
+[{
     "text":"This is a great beer to enjoy in a sunny day!", 
-    "score": 5
-}
+    "score": 5,
+    "user_id": 1,
+    "brew_id":1
+}]

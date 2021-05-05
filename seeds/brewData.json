@@ -3,7 +3,7 @@
     "name": "Pliny The Elder",
     "breweryName": "Russian River",
     "description": "Pliny the Elder is brewed with Amarillo, Centennial, CTZ, and Simcoe hops. It is well-balanced with malt, hops, and alcohol, slightly bitter with a fresh hop aroma of floral, citrus, and pine. Best enjoyed FRESH! That is why we make it in such a limited supply. The actual bottling date is printed on each bottle!",
-    "alcContent": "8.0%",
+    "alcContent": "8.0",
     "style": "Double IPA"
 },
 {
@@ -52,15 +52,15 @@
     "name": "Campfire Stout",
     "breweryName": "High Water Brewing",
     "description": "Stout brewed with graham crackers, molasses with natural flavor added. Campfire Stout evokes fond memories of wilderness and camping adventures. Notes of chocolate and graham cracker topped with a hint of marshmallow will leave you wanting s’more. Like any campfire experience, this beer is best shared with a warm circle of family and friends.",
-    "alcContent": "",
-    "style": ""
+    "alcContent": "6.5",
+    "style": "American Stout"
 },
 {
     "name": "Hoptomic",
     "breweryName": "Morgan Territory",
     "description": "A Hop Driven Beer Hoptomic is a hop forward West-Coast Double IPA that’s driven by profiles of Citrus, Pine and Resin. We keep the malt bill simple so it won't interfere with all the hops.",
     "alcContent": "8.5",
-    "style": "Dpuble IPA"
+    "style": "Double IPA"
 },
 {
     "name": "Guava Happens",
