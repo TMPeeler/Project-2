@@ -5,14 +5,14 @@ const loginFormHandler = async (event) => {
     const password = document.querySelector('#password-login').value.trim();
 
     if (email && password) {
-        const response = await fetch('/api/users/login',{
+        const response = await fetch('/api/user/login',{
             method: 'POST',
             body: JSON.stringify({ email,password }),
             headers: {'Content-Type': 'application/json'},
         });
 
         if (response.ok) {
-            document.location.replace('/api/post/dashboard');
+            document.location.replace('/');
         } else {
             alert(response.statusText);
         }
@@ -27,14 +27,14 @@ const registerFormHandler = async (event) => {
     const password = document.querySelector('#password-register').value.trim();
 
     if (userName && email && password) {
-        const response = await fetch('/api/users',{
+        const response = await fetch('/api/user',{
             method:'POST',
             body: JSON.stringify({userName,email,password}),
             headers: { 'Content-Type': 'application/json'},
         });
 
         if (response.ok) {
-            document.location.replace('/api/post/dashboard');
+            document.location.replace('/');
         } else {
             alert(response.statusText);
         }
