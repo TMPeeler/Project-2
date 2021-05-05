@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,9 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <title>Login</title>
 </head>
+
 <body>
-    
+
 
     <div class="cointainer-fluid">
         <div class="row mx-1">
@@ -24,23 +26,37 @@
                         <!-- <a class="nav-link fs-2" href="/logout">Logout</a> -->
                     </div>
                 </nav>
-            
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-6">
 
-                                <!-- LOGIN FORM -->
-                                <form action="action_page.php" method="post" class="login-form">
-                                    <div class="container">
-                                        <label for="uname" >Email</label>
-                                        <input type="text" placeholder="Enter Username" name="email" required id="email-login">
-                                        <label for="psw">Password</label>
-                                        <input type="password" placeholder="Enter Password" name="password" required id="password-login">
-                                        <button type="submit">Login</button>
-                                    </div>
-                                </form>
+                                <div class="card">
 
+                                    <div class="card-body">
+                                        <!-- LOGIN FORM -->
+                                        <h1 class="card-header">Login for existing users:</h1>
+
+                                        <form class="ms-3">
+                                            <div class="mb-3 row">
+                                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                                <div class="col-sm-10">
+                                                    <input type="email" class="form-control-lg" id="">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 row">
+                                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                <div class="col-sm-10">
+                                                    <input type="password" class="form-control-lg" id="">
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Login</button>
+                                        </form>
+
+                                    </div>
+
+                                </div>
                             </div>
 
 
@@ -48,17 +64,40 @@
                             <div class="col-md-6">
 
                                 <!-- REGISTER FORM -->
-                                <form action="action_page.php" method="post" class="signup-form">
-                                    
-                                        <label for="uname">New Username</label>
-                                        <input type="text" placeholder="Enter Username" name="uname" required id="name-signup">
-                                        <label for="uname">New Email</label>
-                                        <input type="text" placeholder="Enter Username" name="uname" required id="email-signup">
-                                        <label for="psw">New Password</label>
-                                        <input type="password" placeholder="Enter Password" name="psw" required id="password-signup">
-                                        <button type="submit">Sign Up</button>
-                                
-                                </form>
+                                <div class="card">
+
+                                    <div class="card-body">
+                                        <!-- LOGIN FORM -->
+                                        <h1 class="card-header">Register a new user:</h1>
+
+                                        <form class="ms-3">
+
+                                            <div class="mb-3 row">
+                                                <label for="exampleInputEmail1" class="form-label">Username</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control-lg" id="">
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3 row">
+                                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                                <div class="col-sm-10">
+                                                    <input type="email" class="form-control-lg" id="">
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3 row">
+                                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                <div class="col-sm-10">
+                                                    <input type="password" class="form-control-lg" id="">
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Register</button>
+                                        </form>
+
+                                    </div>
+
+                                </div>
 
                             </div>
 
@@ -77,4 +116,5 @@
         </div>
     </div>
 </body>
+
 </html>
