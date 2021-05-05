@@ -1,0 +1,52 @@
+<div class="row">
+    <div class="col-md-12">
+        {{!-- Show the beer we clicked on as one big card --}}
+        {{> Brewcard}}
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        {{!-- Show each review as a card --}}
+        {{#each}}
+        {{> Reviewcard}}
+        {{/each}}
+
+    </div>
+</div>
+
+{{!-- if logged in allow the user to add their own review --}}
+{{#if logged_in}}
+<div class="row">
+    <div class="col-md-12">
+
+        <div class="card">
+            <div class="card-body">
+                <h1>Add your own review!</h1>
+                <form action="">
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">User Text here</label>
+                        <input type="text" class="form-control" id="" placeholder="Review the Brew">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">
+                            Score</label>
+                        <select class="form-select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+
+                    </div>
+                    <button class="btn btn-primary mt-3" type="submit">Submit new Beer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{{/if}}
