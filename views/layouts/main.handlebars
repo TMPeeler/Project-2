@@ -23,81 +23,18 @@
                     <div class="container justify-content-end">
 
                         <!-- if not logged in show  -->
+                        {{#if !logged_in}}
                         <a class="nav-link fs-2" href="/login">Login</a>
+                        {{/if}}
                         <!-- if logged in show this one -->
+                        {{#if logged_in}}
                         <a class="nav-link fs-2" href="/logout">Logout</a>
+                        {{/if}}
                     </div>
                 </nav>
 {{{body}}}
                 <!-- write card that holds each beer in here -->
-                <div class="row">
-                    <div class="col-md-7">
-                        
-                        <!-- this is where the card loop should be -->
-                        {{!-- <div class="card">
-                            <div class="card-body">
-                                <!-- try to get picture to sit to the left -->
-                                <!-- <img src="" alt=""> -->
-                                <h1 class="card-header">Beer Name goes here</h1>
-                                <h2 class="card-text">Brewery name:</h2>
-                                <h2 class="card-text">Description of beer goes here</h2>
-                                <h3 class="card-text">Alc%</h3>
-                                <h3 class="card-text">type of beer here</h3>
-                            </div>
-                        </div> --}}
-                        {{#each Brew}}
-                        {{> Brewcard}}
-                        {{/each}}
-                    </div>
-
-
-                    <div class="col-md-5">
-                        <div class="card">
-                            <div class="card-body">
-
-                                <h1 class="card-header">Add a New Beer!</h1>
-
-                                <form action="">
-                                    <div class="mb-3">
-                                        <label for="formFile" class="form-label">Add a Picture</label>
-                                        <input class="form-control" type="file" id="">
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Description</label>
-                                        <input type="text" class="form-control" id=""
-                                            placeholder="Tell us about the Brew">
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Brewery</label>
-                                        <input type="text" class="form-control" id=""
-                                            placeholder="Enter the Brewery or Company">
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Alcohol
-                                            Percentage</label>
-                                        <input type="text" class="form-control" id=""
-                                            placeholder="What % alcohol is it?">
-                                    </div>
-
-                                    <label for="exampleDataList" class="form-label">Type of Brew?</label>
-                                    <input class="form-control" list="datalistOptions" id="exampleDataList"
-                                        placeholder="Tell us what kind of Brew you have!">
-                                    <datalist id="datalistOptions">
-                                        <option value="IPA">
-                                        <option value="Hazy IPA">
-                                        <option value="Double IPA">
-                                        <option value="Pale Ale">
-                                        <option value="Amber Ale">
-                                    </datalist>
-                                    <button class="btn btn-primary mt-3" type="submit">Submit new Beer</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
 
 
 
