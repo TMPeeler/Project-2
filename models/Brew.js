@@ -24,7 +24,7 @@ Brew.init(
             allowNull: false,
         },
         alcContent:{
-            type: DataTypes.INTEGER,
+            type: DataTypes.DECIMAL,
             allowNull: false,
         },
         style:{
