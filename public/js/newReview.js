@@ -16,7 +16,7 @@ const newReview = async (event) => {
       });
       if (response.ok) {
           //this is where the user would be redirected to the new beer page for whichever one they were on
-        document.location.replace('/');
+        document.location.replace(`${brew_id}`);
       } else {
         alert(response.statusText);
       }
