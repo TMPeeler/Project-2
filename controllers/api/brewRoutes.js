@@ -25,7 +25,7 @@ router.get('/:id', async (req,res) => {
         console.log(brewData);
         //res.status(200).json(brewData);
         res.render('brewpage',{
-            brew : brewData,
+            brew : brewData.dataValues,
             logged_in: req.session.logged_in,
         });
     } catch (err) {
