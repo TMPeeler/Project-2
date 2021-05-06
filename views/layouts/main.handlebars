@@ -15,22 +15,22 @@
         <div class="row mx-1">
             <div class="col-md-12 min-vh-100 ">
                 <!-- <h1> hello world</h1> -->
-
                 <nav class="navbar my-2 py-2 px-2">
 
-                    <a class="navbar-brand ms-2 fs-2 " href="#">Home</a>
+                    <a class="navbar-brand ms-2 fs-2 " href="/">Home</a>
 
                     <div class="container justify-content-end">
 
                         <!-- if not logged in show  -->
-                        {{#if !logged_in}}
+                        {{#if logged_in}}
+                        <a class="nav-link fs-2" href="/logout">Logout</a> 
+                        <!-- if logged in show this one -->
+                        {{else}}
+                        
                         <a class="nav-link fs-2" href="/login">Login</a>
                         {{/if}}
-                        <!-- if logged in show this one -->
-                        {{#if logged_in}}
-                        <a class="nav-link fs-2" href="/logout">Logout</a>
-                        {{/if}}
                     </div>
+
                 </nav>
 {{{body}}}
                 <!-- write card that holds each beer in here -->
@@ -43,6 +43,10 @@
         </div>
     </div>
     <!-- include script for logout if logged in -->
+    {{#if logged_in}}
+    <script src="./js/logout.js"></script>
+    {{/if}}
+    {{!-- <script src="./js/login.js"></script> --}}
     <!-- include script for login if not logged in yet -->
 </body>
 
