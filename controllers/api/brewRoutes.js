@@ -4,7 +4,7 @@ const User = require('../../models/User');
 const Review = require('../../models/Review');
 const withAuth = require('../../utils/auth');
 
-router.post('/newbrew', withAuth, async (req,res) => {
+router.post('/newbrew', async (req,res) => {
     try {
         const brewData = await Brew.create(req.body);
         console.log('new beer created');
@@ -13,7 +13,6 @@ router.post('/newbrew', withAuth, async (req,res) => {
         res.status(400).json(err);
     }
 });
-
 
 
 
