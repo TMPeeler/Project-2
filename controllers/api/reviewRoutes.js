@@ -1,11 +1,11 @@
+const router = require('express').Router();
 const Brew = require('../../models/Brew');
 const User = require('../../models/User');
 const Review = require('../../models/Review');
 const withAuth = require('../../utils/auth');
-const router = require('express').Router();
 
-router.post('/newrev', withAuth, async (req,res) => {
-    //const goodparams = {...req.body,user_id: req.session.user_id}
+router.post('/newrev', async (req,res) => {
+    //const goodparams = {...req.body,user_id: req.session.user_id, brew_id: req.params.id}
     try {
         const reviewData = await Review.create(req.body);
         console.log('Review Created!');
