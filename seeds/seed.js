@@ -1,8 +1,10 @@
 const sequelize = require('../config/connection');
-//const { User, Brew, Review } = require('../models');
+
 const Brew = require('../models/Brew');
 const User = require('../models/User');
 const Review = require('../models/Review');
+
+
 const userData = require('./userData.json');
 const reviewData = require('./reviewData.json');
 const brewData = require('./brewData.json');
