@@ -4,8 +4,7 @@ const User = require('../../models/User');
 const Review = require('../../models/Review');
 const withAuth = require('../../utils/auth');
 
-
-router.post('/newbrew', withAuth, async (req,res) => {
+router.post('/newbrew', async (req,res) => {
     try {
         console.log("----")
         const brewData = await Brew.create(req.body);
@@ -20,13 +19,17 @@ router.post('/newbrew', withAuth, async (req,res) => {
 router.get('/:id', async (req,res) => {
     try {
         const brewData = await Brew.findOne({where:{id: req.params.id}});
+        const reviewData = await Review.findAll({where:{brew_id: req.params.id}});
+        const reviews = reviewData.map((review)=> review.get({plain: true}));
         if(!brewData){
             res.status(404).json({message:"No Beer Found Matching Your Selection"});
         }
-        console.log(brewData);
+        //console.log(brewData);
+        //console.log(reviewData);
         //res.status(200).json(brewData);
         res.render('brewpage',{
             brew : brewData.dataValues,
+            review: reviews,
             logged_in: req.session.logged_in,
         });
     } catch (err) {
