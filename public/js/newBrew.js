@@ -1,7 +1,7 @@
 const newBrew = async (event) => {
     event.preventDefault();
-    const name = document.querySelector('#newp-title').value.trim();
-    const title = document.querySelector('#newp-title').value.trim();
+    // const pic = document.querySelector('#newp-title').value.trim();
+    const name = document.querySelector('#name').value.trim();
     const description = document.querySelector('#desc').value.trim();
     const brewery = document.querySelector('#brewery').value.trim();
     const alcohol = document.querySelector('#alcohol').value.trim();
