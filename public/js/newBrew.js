@@ -9,7 +9,7 @@ const newBrew = async (event) => {
 
     if (title && description && brewery && alcohol && style ){
         // change this to whatever the name of the route with the specific beer is called
-      const response = await fetch('',{
+      const response = await fetch('/newbrew',{
         method:'POST',
         body: JSON.stringify({title, description, brewery, alcohol, style,}),
         headers: {'Content-Type': 'application/json'},

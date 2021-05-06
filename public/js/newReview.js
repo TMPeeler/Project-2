@@ -7,7 +7,7 @@ const newReview = async (event) => {
 
     if (review && score ){
         //not sure what to fetch 
-      const response = await fetch('',{
+      const response = await fetch('/newrev',{
         method:'POST',
         body: JSON.stringify({review, score}),
         headers: {'Content-Type': 'application/json'},
