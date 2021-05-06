@@ -18,12 +18,16 @@ router.post('/newbrew', withAuth, async (req,res) => {
 
 router.get('/:id', async (req,res) => {
     try {
-        const brewData = await Brew.findByPk(req.params.id)
+        const brewData = await Brew.findOne({where:{id: req.params.id}});
         if(!brewData){
             res.status(404).json({message:"No Beer Found Matching Your Selection"});
         }
         console.log(brewData);
-        res.status(200).json(brewData);
+        //res.status(200).json(brewData);
+        res.render('brewpage',{
+            brew : brewData.dataValues,
+            logged_in: req.session.logged_in,
+        });
     } catch (err) {
         res.status(500).json(err);
     }

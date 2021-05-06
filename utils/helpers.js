@@ -20,5 +20,5 @@ module.exports = {
             System.out.println('🍺🍺🍺🍺🍺')
                 break;
         }
-    }
+    },
 };
