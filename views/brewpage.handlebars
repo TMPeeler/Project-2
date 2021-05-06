@@ -1,7 +1,13 @@
 <div class="row">
     <div class="col-md-12">
         {{!-- Show the beer we clicked on as one big card --}}
+        {{#each brew}}
         {{> Brewcard}}
+        {{log brew}}
+        {{/each}}
+        {{!-- {{#if brew}}
+        {{> Brewcard}}
+        {{/if}} --}}
     </div>
 </div>
 
@@ -9,9 +15,9 @@
 <div class="row">
     <div class="col-md-12">
         {{!-- Show each review as a card --}}
-        {{#each}}
+
         {{> Reviewcard}}
-        {{/each}}
+
 
     </div>
 </div>
