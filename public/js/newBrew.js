@@ -6,7 +6,7 @@ const newBrew = async (event) => {
     const description = document.querySelector('#desc').value.trim();
     const alcContent = document.querySelector('#alcohol').value.trim();
     const style = document.querySelector('#style').value.trim();
-
+    
 
     if (name && breweryName && description  && alcContent && style){
         // change this to whatever the name of the route with the specific beer is called
