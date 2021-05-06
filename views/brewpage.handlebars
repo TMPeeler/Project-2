@@ -27,8 +27,9 @@
 <div class="row">
     <div class="col-md-12">
         {{!-- Show each review as a card --}}
-
+        {{#each review}}
         {{> Reviewcard}}
+        {{/each}}
 
 
     </div>
@@ -42,26 +43,49 @@
         <div class="card">
             <div class="card-body">
                 <h1>Add your own review!</h1>
-                <form action="" class="new-review-form">
+                <form class="new-review-form">
 
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">User Text here</label>
                         <input type="text" class="form-control" id="review" placeholder="Review the Brew">
                     </div>
+                     <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">User Text here</label>
+                        <input type="text" class="form-control" id="score" placeholder="Review the Brew">
+                    </div>
+                     <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">User Text here</label>
+                        <input type="text" class="form-control" id="user_id" placeholder="Review the Brew">
+                    </div>
+                     <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">User Text here</label>
+                        <input type="text" class="form-control" id="brew_id" placeholder="Review the Brew">
+                    </div>
 
-                    <div class="mb-3">
+                    {{!-- <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">
                             Score</label>
-                        <select class="form-select">
+                        <select class="form-select" id="score">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
                         </select>
-
                     </div>
-                    <button class="btn btn-primary mt-3" type="submit">Submit new Beer</button>
+                        <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">
+                            Score</label>
+                        <select class="form-select" id="bid">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select> --}}
+
+                    {{!-- </div> --}}
+                    <button class="btn btn-primary mt-3" type="submit">Submit Review!</button>
                 </form>
             </div>
         </div>
