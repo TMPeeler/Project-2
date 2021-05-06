@@ -22,11 +22,19 @@
                     <div class="container justify-content-end">
 
                         <!-- if not logged in show  -->
+<<<<<<< HEAD
                         {{#if logged_in}}
                         <a class="nav-link fs-2" href="/logout">Logout</a> 
                         <!-- if logged in show this one -->
                         {{else}}
                         
+=======
+                        
+                        <!-- if logged in show this one -->
+                        {{#if logged_in}}
+                        <a class="nav-link fs-2 logout-button" href="/logout">Logout</a>
+                        {{else}}
+>>>>>>> a68b8d3c41c53e5e0390184371d0d88139aea60d
                         <a class="nav-link fs-2" href="/login">Login</a>
                         {{/if}}
                     </div>
@@ -44,9 +52,14 @@
     </div>
     <!-- include script for logout if logged in -->
     {{#if logged_in}}
+<<<<<<< HEAD
     <script src="./js/logout.js"></script>
     {{/if}}
     {{!-- <script src="./js/login.js"></script> --}}
+=======
+    <script src="/js/logout.js"></script>
+    {{/if}}
+>>>>>>> a68b8d3c41c53e5e0390184371d0d88139aea60d
     <!-- include script for login if not logged in yet -->
 </body>
 

@@ -9,7 +9,8 @@ router.get('/', async (req,res)=>{
         console.log(brews);
         //res.status(200).json(brews);
         res.render('homepage',{
-            brew: brews
+            brew: brews,
+            logged_in: req.session.logged_in,
         });
     } catch (err) {
         res.status(500).json(err);
