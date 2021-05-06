@@ -8,7 +8,7 @@ const newBrew = async (event) => {
     const style = document.querySelector('#style').value.trim();
 
 
-    if (name && breweryName && description  && alcContent && style ){
+    if (name && breweryName && description  && alcContent && style){
         // change this to whatever the name of the route with the specific beer is called
       const response = await fetch('/api/brew/newbrew',{
         method:'POST',
