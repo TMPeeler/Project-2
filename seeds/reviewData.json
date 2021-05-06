@@ -1,8 +1,43 @@
-[
-{
+
+[{
     "text":"This is a great beer to enjoy in a sunny day!", 
     "score": 5,
-    "user_id":1,
+    "user_id": 1,
     "brew_id":1
-}
-]
+},
+{
+    "text": "The beer, the myth... the legend. It was of course a divine experience to taste it the first time. However, it’s a beer that you’ll gladly revisit at any chance given. A refreshing and amazing good old West Coast IPA, full of hoppy excitement!",
+    "score": "4",
+    "user_id": "1",
+    "brew_id": "1"
+},
+{
+    "text": "Stone Enjoy By 4-20-21, on tap in Ernie´s Tin Bar, Petaluma, in October. An excellent double IPA, brimming with luscious and fresh hop aromas and flavours, intense but not too extreme.",
+    "score": "5",
+    "user_id": "2",
+    "brew_id": "2"
+},
+{
+    "text": "Pours to a nice hazy golden orange color with white head and lacing that last thru mid-late glass. Nose was very hoopy grapefuit-mango citrus that carries well into the taste. Mouthfeel was some of the best I've had....very full bodied andf creamy with a long lingering and very pleasant after taste. A very good IPA which to me is in league with some of the other greats and why most of the IPAs I rate are in the range of 3.5-4.0.",
+    "score": "4",
+    "user_id": "3",
+    "brew_id": "2"
+},
+{
+    "text": "Straw yellow color, thin body, a fizzy yellow water. Aroma is adjunct grain very little hops. Hint of lemon and pear. Cardboard smell. Taste isn't as awful as one would expect. This is mainly just a palate cleanser to wash down food. Body is very thin and the aftertaste is gross. I really can't believe I used to like this stuff.",
+    "score": "2",
+    "user_id": "3",
+    "brew_id": "3"
+},
+{
+    "text": "I saw someone's comment that beer should be judged by occasion. I agree. Hot day, meat on grill, this beer is cold and refreshing. Not fancy by any means, but solid.",
+    "score": "3",
+    "user_id": "3",
+    "brew_id": "4"
+},
+{
+    "text": "So apparently it's 'ironic' to drink the beer your dad used to pound at the family cookout ... Or so the hipster legend says .... As mass produced old school lagers go this is, admittedly, better than most ... The nice head doesn't last long and is quickly overshadowed by the "dive bar bathroom" nose ... Smooth and average tasting .... I'd write more, but I need to wax my mustache and get my skinny jeans out of the dryer",
+    "score": "2",
+    "user_id": "1",
+    "brew_id": "6"
+}]

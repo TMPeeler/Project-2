@@ -1,3 +1,4 @@
+const router = require('express').Router();
 const Brew = require('../../models/Brew');
 const User = require('../../models/User');
 const Review = require('../../models/Review');
@@ -13,6 +14,9 @@ router.post('/newbrew', withAuth, async (req,res) => {
     }
 });
 
+
+
+
 router.get('/:id', async (req,res) => {
     try {
         const brewData = await Brew.findByPk(req.params.id)
@@ -25,5 +29,6 @@ router.get('/:id', async (req,res) => {
         res.status(500).json(err);
     }
 });
+
 
 module.exports = router;

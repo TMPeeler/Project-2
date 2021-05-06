@@ -28,7 +28,7 @@ Review.init(
             allowNull: false,
             references:{
                 model:'user',
-                key:'id'
+                key:'id',
             },
         },
         brew_id:{
