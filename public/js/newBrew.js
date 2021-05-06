@@ -1,5 +1,6 @@
 const newBrew = async (event) => {
     event.preventDefault();
+    const name = document.querySelector('#newp-title').value.trim();
     const title = document.querySelector('#newp-title').value.trim();
     const description = document.querySelector('#desc').value.trim();
     const brewery = document.querySelector('#brewery').value.trim();
@@ -7,11 +8,11 @@ const newBrew = async (event) => {
     const style = document.querySelector('#style').value.trim();
 
 
-    if (title && description && brewery && alcohol && style ){
+    if (name && title && description && brewery && alcohol && style ){
         // change this to whatever the name of the route with the specific beer is called
       const response = await fetch('/newbrew',{
         method:'POST',
-        body: JSON.stringify({title, description, brewery, alcohol, style,}),
+        body: JSON.stringify({name ,title, description, brewery, alcohol, style,}),
         headers: {'Content-Type': 'application/json'},
       });
       if (response.ok) {
