@@ -1,5 +1,8 @@
 const newBrew = async (event) => {
     event.preventDefault();
+    
+    console.log("-----");
+
     // const pic = document.querySelector('#pic').value.trim();
     const name = document.querySelector('#name').value.trim();
     const breweryName = document.querySelector('#brewery').value.trim();
@@ -10,19 +13,23 @@ const newBrew = async (event) => {
 
     if (name && breweryName && description  && alcContent && style ){
         // change this to whatever the name of the route with the specific beer is called
-      const response = await fetch('/api/brew/newbrew',{
+        
+        const response = await fetch('/api/brew/newbrew',{
         method:'POST',
-        body: JSON.stringify({name , breweryName, description, alcContent, style}),
+        body: JSON.stringify({name, breweryName, description, alcContent, style}),
         headers: {'Content-Type': 'application/json'},
+      
       });
-      if (response.ok) {
-        document.location.replace('/');
-      } else {
-        alert(response.statusText);
-      }
+      // console.log("-----");
+      // console.log(response);
+      // if (response.ok) {
+      //   document.location.replace('/');
+      // } else {
+      //   alert(response.statusText);
+      // }
     }
   };
 
   document
   .querySelector('.new-beer-form')
-  .addEventListener('submit', newBrew);
+  .addEventListener('click', newBrew);

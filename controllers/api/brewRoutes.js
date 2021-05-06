@@ -7,10 +7,12 @@ const withAuth = require('../../utils/auth');
 
 router.post('/newbrew', withAuth, async (req,res) => {
     try {
+        console.log("----")
         const brewData = await Brew.create(req.body);
         console.log('new beer created');
         res.status(200).json(brewData);
     } catch (err) {
+        console.log(err);
         res.status(400).json(err);
     }
 });
