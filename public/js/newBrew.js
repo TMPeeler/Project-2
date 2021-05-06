@@ -1,18 +1,18 @@
 const newBrew = async (event) => {
     event.preventDefault();
-    // const pic = document.querySelector('#newp-title').value.trim();
+    // const pic = document.querySelector('#pic').value.trim();
     const name = document.querySelector('#name').value.trim();
+    const breweryName = document.querySelector('#brewery').value.trim();
     const description = document.querySelector('#desc').value.trim();
-    const brewery = document.querySelector('#brewery').value.trim();
-    const alcohol = document.querySelector('#alcohol').value.trim();
+    const alcContent = document.querySelector('#alcohol').value.trim();
     const style = document.querySelector('#style').value.trim();
 
 
-    if (name && title && description && brewery && alcohol && style ){
+    if (name && breweryName && description  && alcContent && style ){
         // change this to whatever the name of the route with the specific beer is called
-      const response = await fetch('/newbrew',{
+      const response = await fetch('/api/brew/newbrew',{
         method:'POST',
-        body: JSON.stringify({name ,title, description, brewery, alcohol, style,}),
+        body: JSON.stringify({name , breweryName, description, alcContent, style}),
         headers: {'Content-Type': 'application/json'},
       });
       if (response.ok) {
