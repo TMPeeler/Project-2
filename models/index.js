@@ -1,13 +1,12 @@
-// const Brew = require('./Brew');
-// const Review = require('./Review');
-// const User = require('./User');
+const Review = require('./Review');
+const User = require('./User');
+//const Brew = require('./Brew');
 
-// Review.belongsTo(Brew,{foreignKey: brew_id});
 
-// Review.belongsTo(User,{foreignKey: user_id});
+// Review.hasOne(User,{foreignKey: 'user_id'});
+User.hasMany(Review,{foreignKey: 'user_id'});
+Review.belongsTo(User,{foreignKey: 'user_id'});
+// Brew.hasMany(Review,{foreignKey: 'brew_id'});
+// Review.belongsTo(Brew,{foreignKey: 'brew_id'});
 
-// User.hasMany(Review,{foreignKey: user_id});
-
-// Brew.hasMany(Review,{foreignKey: brew_id});
-
-// module.exports = {Brew,User,Review};
+module.exports = {User,Review};

@@ -13,7 +13,7 @@
                     <ul class="list-group list-group flush">
                         <li class="list-group-item fs-2 py-4">Brewery: <b>{{brew.breweryName}}</b> </li>
                         <li class="list-group-item fs-4 py-2"><b>Details:</b> {{brew.description}}</li>
-                        <li class="list-group-item fs-3 py-3">Alc%: {{brew.alcContent}}</li>
+                        <li class="list-group-item fs-3 py-3">Alcohol Content: {{brew.alcContent}}%</li>
                         <li class="list-group-item fs-3 py-3">Style: {{brew.style}}</li>
                     </ul>
                 </div>
@@ -62,21 +62,27 @@
                 <form class="new-review-form">
 
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">User Text here</label>
+                        <label for="exampleFormControlInput1" class="form-label">Review</label>
                         <input type="text" class="form-control" id="review" placeholder="Review the Brew">
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">User Text here</label>
+                     <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Score</label>
                         <input type="text" class="form-control" id="score" placeholder="Review the Brew">
                     </div>
                     <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Brew ID</label>
+                        <select class="form-select" id="brew_id">
+                            <option value="1">{{brew.id}}</option>
+                        </select>
+                    </div>
+                     {{!-- <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">User Text here</label>
                         <input type="text" class="form-control" id="user_id" placeholder="Review the Brew">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">User Text here</label>
                         <input type="text" class="form-control" id="brew_id" placeholder="Review the Brew">
-                    </div>
+                    </div> --}}
 
                     {{!-- <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">
