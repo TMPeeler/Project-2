@@ -16,7 +16,6 @@ router.post('/newbrew', async (req,res) => {
 
 
 
-
 router.get('/:id', async (req,res) => {
     try {
         const brewData = await Brew.findOne({where:{id: req.params.id}});
