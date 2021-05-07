@@ -45,21 +45,27 @@
                 <form class="new-review-form">
 
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">User Text here</label>
+                        <label for="exampleFormControlInput1" class="form-label">Review</label>
                         <input type="text" class="form-control" id="review" placeholder="Review the Brew">
                     </div>
                      <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">User Text here</label>
+                        <label for="exampleFormControlInput1" class="form-label">Score</label>
                         <input type="text" class="form-control" id="score" placeholder="Review the Brew">
                     </div>
-                     <div class="mb-3">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Brew ID</label>
+                        <select class="form-select" id="brew_id">
+                            <option value="1">{{brew.id}}</option>
+                        </select>
+                    </div>
+                     {{!-- <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">User Text here</label>
                         <input type="text" class="form-control" id="user_id" placeholder="Review the Brew">
                     </div>
                      <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">User Text here</label>
                         <input type="text" class="form-control" id="brew_id" placeholder="Review the Brew">
-                    </div>
+                    </div> --}}
 
                     {{!-- <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">

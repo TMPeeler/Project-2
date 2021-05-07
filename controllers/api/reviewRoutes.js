@@ -5,9 +5,9 @@ const Review = require('../../models/Review');
 const withAuth = require('../../utils/auth');
 
 router.post('/newrev', async (req,res) => {
-    //const goodparams = {...req.body,user_id: req.session.user_id, brew_id: req.params.id}
+    const goodparams = {...req.body,user_id: req.session.user_id}
     try {
-        const reviewData = await Review.create(req.body);
+        const reviewData = await Review.create(goodparams);
         console.log('Review Created!');
         res.status(200).json(reviewData);
     } catch (err) {
