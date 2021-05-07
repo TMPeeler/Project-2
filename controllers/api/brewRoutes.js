@@ -16,11 +16,8 @@ router.post('/newbrew', async (req,res) => {
     }
 });
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> b03b03d4d2748ff3b232c64190129490a405145e
 router.get('/:id', async (req,res) => {
     try {
         const brewData = await Brew.findOne({where:{id: req.params.id}});
