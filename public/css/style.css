@@ -1,0 +1,32 @@
+body { 
+    /* background-image: url("images/beer.jpeg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+    /* background-image: url(../../images/beer.jpeg); */
+    /* background: #FDC830;  fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #F37335, #FDC830);  Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #bb521e, #faa628);
+
+  }
+.roundedCorners {
+    border-radius: 15px;
+}
+
+.opaqueCard {
+    
+    opacity: 0.9;
+}
+
+.cardShadow {
+    transition: box-shadow 750ms;
+    box-shadow: 0;
+
+}
+
+.cardShadow:hover {
+    
+    box-shadow: 0 15px 25px rgba(129, 40, 5, 0.4);
+    
+}
