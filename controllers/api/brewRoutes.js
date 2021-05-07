@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const Brew = require('../../models/Brew');
-const User = require('../../models/User');
+const {User} = require('../../models');
 const Review = require('../../models/Review');
 const withAuth = require('../../utils/auth');
 
