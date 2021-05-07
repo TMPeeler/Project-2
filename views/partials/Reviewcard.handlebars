@@ -4,16 +4,8 @@
         <p>{{text}}</p>
         <h2>{{format_rating score}}</h2>
         <div class="justify-content-end">
-            <script>
-                var i = 0;
-                function buttonClick() {
-                    i++;
-                    document.getElementById('inc').value = i;
-                }
-            </script>
-
-            <button onclick="buttonClick()">Like👍</button>
-            <input type="text" id="inc" value="0"></input>
+            <div class="button">
+            <button>Like👍</button>
             <button>Dislike👎</button>
         </div>
     </div>
