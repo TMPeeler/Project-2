@@ -1,15 +1,23 @@
-
-<div class="card">
-    <a href="/api/brew/{{id}}">
+<div class="card mb-5 pb-3 roundedCorners cardShadow">
     <div class="card-body">
         <!-- try to get picture to sit to the left -->
-        <!-- <img src="" alt=""> --><a href="/api/brew/{{id}}">
-        <h1 class="card-header">{{name}}</h1>
-        </a>
-        <h2 class="card-text">{{breweryName}}</h2>
-        <h2 class="card-text">{{description}}</h2>
-        <h3 class="card-text">Alc%: {{alcContent}}</h3>
-        <h3 class="card-text">Style: {{style}}</h3>
+        <!-- <img src="" alt=""> -->
+        <div class="text-center">
+        <a href="/api/brew/{{id}}" class="card-title text-dark fs-1 text-decoration-none">{{name}}</a>
+        </div>
+        {{!-- <img src="" alt="" class="card-img-top"> --}}
+        <div class="text-white bg-dark">
+        <ul class="list-group list-group flush">
+            <li class="list-group-item fs-2 py-4">Brewery: <b>{{breweryName}}</b> </li>
+            <li class="list-group-item fs-4 py-2"><b>Details:</b> {{description}}</li>
+            <li class="list-group-item fs-3 py-3">Alcohol Content: {{alcContent}}%</li>
+            <li class="list-group-item fs-3 py-3">Style: {{style}}</li>
+        </ul>
+        </div>
+        {{!-- <h2 class="card-header"></h2>
+        <h2 class="card-text"></h2>
+        <h3 class="card-text"></h3>
+        <h3 class="card-text"></h3> --}}
         
     </div>
     </a>
