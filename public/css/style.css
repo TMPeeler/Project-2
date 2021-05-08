@@ -12,7 +12,7 @@ body {
     /* background: -webkit-linear-gradient(to right, #F37335, #FDC830);  Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #bb521e, #faa628);
 
-  }
+};
 .roundedCorners {
     border-radius: 15px;
 };
@@ -33,15 +33,15 @@ body {
     box-shadow: 0 15px 25px rgba(129, 40, 5, 0.4);
     
 };
-/* 
+
 .card {
     flex-direction: row;
 };
 
 .card img {
     width: 30%;
-} */
+}
 .card-horizontal {
     display: flex;
     flex: 1 1 auto;
-}
+};
