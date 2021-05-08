@@ -17,7 +17,7 @@ body {
     border-radius: 15px;
 };
 
-.opaqueCard {
+/* .opaqueCard {
     
     opacity: 0.9;
 };
@@ -44,4 +44,13 @@ body {
 .card-horizontal {
     display: flex;
     flex: 1 1 auto;
+<<<<<<< HEAD
 };
+=======
+}
+
+#demo-svg path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    }
+>>>>>>> b59fd77c84aea5aa202a0c266d525f56ae258daf
