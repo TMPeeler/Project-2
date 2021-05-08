@@ -2,9 +2,9 @@
     <div class="col-md-12">
         {{!-- Show the beer we clicked on as one big card --}}
         <div class="card mb-5 pb-3 roundedCorners cardShadow">
-            <div class="card-horizontal">
+            <div class="card-horizontal align-items-center">
                 <div class="img-square-wrapper">
-                    <img src="/images/{{brew.id}}.jpg" style="width: 300px; height: 400px" class=""
+                    <img src="/images/{{brew.id}}.jpg" style="width: 250px; height: 375px" class="rounded  mx-4 mt-5 p-1 brewPageImage"
                         alt="{{name}}">
                 </div>
                 <div class="card-body">
@@ -16,10 +16,10 @@
                     </div>
                     <div class="text-white bg-dark">
                         <ul class="list-group list-group flush">
-                            <li class="list-group-item fs-2 py-4">Brewery: <b>{{brew.breweryName}}</b> </li>
-                            <li class="list-group-item fs-4 py-2"><b>Details:</b> {{brew.description}}</li>
-                            <li class="list-group-item fs-3 py-3">Alcohol Content: {{brew.alcContent}}%</li>
-                            <li class="list-group-item fs-3 py-3">Style: {{brew.style}}</li>
+                            <li class="list-group-item fs-2 py-4 bg-light">Brewery: <b>{{brew.breweryName}}</b> </li>
+                            <li class="list-group-item fs-4 py-2 bg-light"><b>Details:</b> {{brew.description}}</li>
+                            <li class="list-group-item fs-3 py-3 bg-light">Alcohol Content: {{brew.alcContent}}%</li>
+                            <li class="list-group-item fs-3 py-3 bg-light">Style: {{brew.style}}</li>
                         </ul>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Brew ID</label>
                         <select class="form-select" id="brew_id">
-                            <option value="1">{{brew.id}}</option>
+                            <option>{{brew.id}}</option>
                         </select>
                     </div>
                     {{!-- <div class="mb-3">
