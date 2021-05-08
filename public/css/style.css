@@ -14,10 +14,10 @@ body {
     border-radius: 15px;
 }
 
-.opaqueCard {
+/* .opaqueCard {
     
     opacity: 0.9;
-}
+} */
 
 .cardShadow {
     transition: box-shadow 750ms;
