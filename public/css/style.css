@@ -15,21 +15,33 @@ body {
   }
 .roundedCorners {
     border-radius: 15px;
-}
+};
 
 .opaqueCard {
     
     opacity: 0.9;
-}
+};
 
 .cardShadow {
     transition: box-shadow 750ms;
     box-shadow: 0;
 
-}
+};
 
 .cardShadow:hover {
     
     box-shadow: 0 15px 25px rgba(129, 40, 5, 0.4);
     
+};
+/* 
+.card {
+    flex-direction: row;
+};
+
+.card img {
+    width: 30%;
+} */
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
 }
