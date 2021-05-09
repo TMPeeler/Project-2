@@ -1,3 +1,20 @@
+ <div class="modal show" id="ageModal" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Are you 21 years old?</h5>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" >No, I am not 21+</button>
+                    <button type="button" class="btn btn-primary" id="ageVer" data-bs-dismiss="ageModal">Yes, I am 21</button>
+                </div>
+            </div>
+        </div>
+    </div>
 <div class="row">
     <div class="col-md-7">
 
@@ -69,3 +86,12 @@
     </div>
     {{/if}}
 </div>
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            $('#ageModal').modal('show');
+        });
+        $(ageVer).on('click', function(){
+            $('#ageModal').modal('hide');
+        })
+    </script>
+

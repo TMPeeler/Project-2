@@ -26,19 +26,8 @@
 
             </div>
         </div>
-        {{!-- <div class="card">
-            <div class="card-body">
-                <!-- try to get picture to sit to the left -->
-                <!-- <img src="" alt=""> --><a href="/api/brew/{{brew.id}}">
-                    <h1 class="card-header">{{brew.name}}</h1>
-                </a>
-                <h2 class="card-text">{{brew.breweryName}}</h2>
-                <h2 class="card-text">{{brew.description}}</h2>
-                <h3 class="card-text">Alc%: {{brew.alcContent}}</h3>
-                <h3 class="card-text">Style: {{brew.style}}</h3>
-
-            </div>
-        </div> --}}
+        </div>
+        </div>
         {{log brew}}
 
         {{!-- {{#if brew}}
@@ -79,42 +68,9 @@
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Brew ID</label>
                         <select class="form-select" id="brew_id">
-                            <option value="1">{{brew.id}}</option>
+                            <option>{{brew.id}}</option>
                         </select>
                     </div>
-                    {{!-- <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">User Text here</label>
-                        <input type="text" class="form-control" id="user_id" placeholder="Review the Brew">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">User Text here</label>
-                        <input type="text" class="form-control" id="brew_id" placeholder="Review the Brew">
-                    </div> --}}
-
-                    {{!-- <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">
-                            Score</label>
-                        <select class="form-select" id="score">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">
-                            Score</label>
-                        <select class="form-select" id="bid">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select> --}}
-
-                        {{!--
-                    </div> --}}
                     <button class="btn btn-primary mt-3" type="submit">Submit Review!</button>
                 </form>
             </div>
