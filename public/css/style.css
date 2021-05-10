@@ -10,7 +10,7 @@ body {
     /* background-image: url(../../images/beer.jpeg); */
     /* background: #FDC830;  fallback for old browsers */
     /* background: -webkit-linear-gradient(to right, #F37335, #FDC830);  Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #bb521e, #faa628);
+    background: linear-gradient(to top, #da5112, #ebca13);
 
 };
 .roundedCorners {
@@ -55,4 +55,10 @@ body {
     }
 .card-image-top1{
     float: right;
+}
+/* .text-center:hover {
+    color: yellow;
+} */
+a:hover {
+    color:yellow;
 }
